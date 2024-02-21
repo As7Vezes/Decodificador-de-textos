@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+
+}
+
+body {
+    background-image: url('./img/fundo-hacker.gif');
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+}
+
+.container_crypto {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+
+.container_input {
+    height: 60px;
+    width: 680px;
+    padding: 15px;
+    font-size: 24px;
+    text-align: left;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: #000000;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: neon 2s infinite alternate;
+}
+
+@keyframes neon {
+    0% {
+        border-color: #008000;
+        box-shadow: 0 0 10px #008000;
+    }
+
+    50% {
+        border-color: #00FFFF;
+        box-shadow: 0 0 20px #00FFFF;
+    }
+
+    100% {
+        border-color: #39FF14;
+        box-shadow: 0 0 10px #39FF14;
+    }
+}
+
+span {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.container_buttons {
+    width: 680px;
+}
+
+.buttons_cripto {
+    margin-top: 15px;
+}
+
+.buttons_cripto {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.buttons_cripto button {
+    padding: 24px;
+    width: 328px;
+    border-radius: 5px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffff;
+}
+
+@keyframes neonGreen {
+    0% {
+        border-color: #008000;
+        box-shadow: 0 0 10px #008000;
+    }
+
+    100% {
+        border-color: #39FF14;
+        box-shadow: 0 0 20px #39FF14;
+    }
+}
+
+
+#button_encrypt {
+    background-color: #008000;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: neonGreen 2s infinite alternate;
+}
+
+#button_decrypt {
+    background-color: #39FF14;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: neonGreen 2s infinite alternate;
+}
+
+.container_response {
+    height: 611px;
+    width: 400px;
+    padding: 20px;
+    border: solid white;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: neonPurple 2s infinite alternate;
+}
+
+#container_input_result {
+    width: 350px;
+    height: 400px;
+    background-color: #0000;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: neon 2s infinite alternate;
+    color: white;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+#button_copy {
+    padding: 24px;
+    border-radius: 5px;
+    width: 300px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffff;
+    background-color: #800080;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    animation: neonPurple 2s infinite alternate;
+}
+
+@keyframes neonPurple {
+    0% {
+        border-color: #800080;
+        box-shadow: 0 0 10px #800080;
+    }
+
+    100% {
+        border-color: #FF00FF;
+        box-shadow: 0 0 20px #FF00FF;
+    }
+}

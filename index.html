@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3182afd910.js" crossorigin="anonymous"></script>
+    <title>Decodificador de Textos</title>
+</head>
+<body>
+    <main class="container">
+        <section class="container_crypto">
+            <input type="text" class="container_input">
+            <div class="container_buttons">
+                <span><i class="fas fa-exclamation-circle"></i> Apenas letras minúsculas e sem acentos</span>
+                <div class="buttons_cripto">
+                    <button id="button_encrypt">Criptografar</button>
+                    <button id="button_decrypt">Descriptografar</button>
+                </div>
+            </div>
+        </section>
+        <section class="container_response">
+            <p id="container_input_result">Não a nada aqui</p>
+            <button id="button_copy">Copiar</button>
+        </section>
+    </main>
+</body>
+<script src="main.js" defer></script>
+</html>
